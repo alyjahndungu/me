@@ -237,11 +237,12 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form method="POST" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input name">
-                        <input type="mail" placeholder="Email" class="contact__input email">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input message"></textarea>
-                        <input type="submit" class="contact__button button">
+                    <form class="contact__form" onsubmit="return false">
+                        <input type="text" placeholder="Name" name="name" class="contact__input ">
+                        <input type="mail" placeholder="Email" name="email" class="contact__input">
+                        <textarea name="message" id="message" cols="0" rows="10" class="contact__input"></textarea>
+                        <!-- <input type="button"  value="Send" class="contact__button button"> -->
+                        <button class="contact__button button">Send</button>
                     </form>
                 </div>
             </section>
@@ -264,35 +265,9 @@
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script type="text/javascript">
-
-document.querySelector(".contact__form").addEventListener("submit", submitForm);
-        function submitForm(e) {
-            e.preventDefault();
-            let name = document.querySelector(".name").value;
-            let email = document.querySelector(".email").value;
-            let message = document.querySelector(".message").value;
-
-
-           document.querySelector(".contact__form").reset;
-
-           sendEmail(name, email, message);
-
-        }
-            function sendEmail(name, email, message) {
-            Email.send({
-            SecureToken : "a5bd7fa1-b7e3-42d2-a66a-7648e9d09528",
-            To : 'ternstonedev@gmail.com',
-            From : "meghanspinn230@gmail.com",
-            Subject: `${name} sent you a message`,
-            Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}` ,
-            })
-            .then(function (message) {
-            alert("Mail has been sent successfully")
-            });
-            }
-            </script>
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/script.js"></script>
+
     </body>
 </html>
