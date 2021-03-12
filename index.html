@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body class="body">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Ternst{on}e👨‍💻</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi👋,<br>I'm <span class="home__title-color">Elijah🤭 </span><br> Software Developer👨‍💻</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/elijah-ndung-u-472980192/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://twitter.com/Terns_tone" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://github.com/elijah-systems" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://join.skype.com/invite/aErYcPImnLJW" class="home__social-icon"><i class='bx bxl-skype' ></i></a>
+
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/IMG_20210107_123358_059-01-removebg-preview.png" class="home__profile" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.png" class="my__photo" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Elijah Ndung'u</h2>
+                        <p class="about__text">I'm an aspiring Full-Stack Developer, looking to acquire proffessional skills
+                            and being upto-date with the futuristic technologies. I like to document my journey as i gain more
+                            more knowledge and build new stuff using new technologies.
+                        </p>  
+                        
+                        <p class="about__text">I started off by taking a college Diploma in <span class="text__highlight">Software Engineering</span>, I got to learn 
+                            more about computer softwares and concentrated so much into <span class="text__highlight">Coding.</span>
+                        </p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="bd-grid">
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">I'm well equiped with the following modern technologies </p>
+                  
+                <div class="skills__container bd-grid">          
+              
+                        <div class="skills__container bd-grid">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon' ></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JAVASCRIPT</span>
+                                </div>
+                            </div>   
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-react skills__icon' ></i>
+                                    <span class="skills__name">REACT NATIVE</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <!-- <i class='bx bxl-spring-boot skills__icon'></i>
+                                    <i class='bx bxl-stripe skills__icon' ></i> -->
+                                    <i class='bx bxl-spring-boot skills__icon' ></i>
+                                    <img class="skills__icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABqklEQVRIS7WV8TGDQRDFXzqgAjpABaICVEAH6IAKQgWoAB1EB3RAB1TA/G52M/td7nL3fTPZf5KR2/d239tdM205ZlvGVw/BpaRTSYeS9q2gL0kfkl4lvUn6qRW6ieBM0iKA1jAguzGyHUlz+57e1wieJF2MlI+cdyvo1nNLBPeSrkaC+/MTI4Cs2AGyvEwA/5VE7tK8Qiq+r0mEnnsjCZ4lIQm5HteSUGJAwLQ8NsDRmGBqqJApisCeDmHyIXpQMvbbHgJWAsrrQRrIkQvyAQFzfRAyaJ2ueoMd8SKKHfwFJCr3peohoHKq9ulpEpzHZelgwFBAfaOLBFGi3U3rnxFSNXonzS2KUxRN7rlRSMjOPARpnICOIBmYHJfsyI5ZSR30ZtMB4AatttYec4sgT3/PK/VFo1188CDh2IykkE+bMGSNATm5kKTICWIXrqmfac4B++Ca590ByvW9a11T9AOcqtlsuspNdHAqpgAK43Ntd2pmAo7GY64qZidjY7T+4dBN6/ixlADHMV1x9Iwj5wJ9kcBPCSZjsHtSmraiydWHU3/o6WAqdsr7B4ApWRmr7lFMAAAAAElFTkSuQmCC"/>
+                                    <span class="skills__name">SPRING BOOT</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-nodejs skills__icon' ></i>
+                                    <span class="skills__name">NODE</span>
+                                </div>
+                            </div>
+
+
+                     
+                          
+                    </div>
+                    
+                    <div class="skills__container bd-grid"> 
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                 <i class='bx bxl-git skills__icon' ></i>
+                                <span class="skills__name">GIT</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon' ></i>
+                                <span class="skills__name">REACT</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <svg class="skills__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M5.239,15.063L7.21,2.381c0.03-0.193,0.18-0.346,0.372-0.378C7.773,1.97,7.965,2.064,8.057,2.236l2.12,3.979 L5.239,15.063z M19.24,18.14L17.363,6.469c-0.028-0.167-0.147-0.305-0.309-0.357s-0.338-0.009-0.457,0.111L4.76,18.14l6.55,3.691 c0.411,0.23,0.912,0.23,1.323,0L19.24,18.14z M13.917,7.955L12.4,5.052c-0.078-0.149-0.232-0.243-0.4-0.243s-0.322,0.094-0.4,0.243 L4.939,16.989L13.917,7.955z"></path></svg>
+                                <span class="skills__name">FIREBASE</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-coin-stack skills__icon' ></i>
+                                <span class="skills__name">MYSQL</span>
+                            </div>
+                        </div>
+                                   
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-server skills__icon' ></i>
+                                <span class="skills__name">POSTGRESQL</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-magento skills__icon' ></i>
+                                <span class="skills__name">MONGODB</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/Screenshot from 2021-03-11 21-16-59.png" alt="">
+                    <div class="work_fall">
+
+                    <p class="skills__text">Tesla News, TeslaNewsAPI, NodeJS, React, MaterialUI</p>
+                </div>
+
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/farmdrive.png" alt="">
+                    <div class="work_fall">
+
+                    <p class="skills__text">FarmDrive, Spring Boot, PostgreSQL React, MaterialUI</p>
+                </div>
+
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/mypage.png" alt="">
+                    <div class="work_fall">
+                    <p class="skills__text">Portfolio, HTML5, CSS3, JavaScript, SCSS, Boxicons CDN</p>
+                </div>
+
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/library.png" alt="">
+                    <div class="work_fall">
+                        <p class="skills__text">Library MIS, HTML5, CSS3, MySQL JavaScript, SCSS, Bootstrap,PHP7</p>
+                    </div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/proj1.png" alt="">
+                        <p class="skills__text">TernCare, Health App. React Native, TypeScript, Expo, Firebase</p>
+
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/chatapp.png" alt="">
+                        <p class="skills__text">Chat App. React Native, TypeScript, Expo, Firebase, React-Native-Gifted-Chat</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form method="POST" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input name">
+                        <input type="mail" placeholder="Email" class="contact__input email">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input message"></textarea>
+                        <input type="submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Elijah Ndung'u</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+
+document.querySelector(".contact__form").addEventListener("submit", submitForm);
+        function submitForm(e) {
+            e.preventDefault();
+            let name = document.querySelector(".name").value;
+            let email = document.querySelector(".email").value;
+            let message = document.querySelector(".message").value;
+
+
+           document.querySelector(".contact__form").reset;
+
+           sendEmail(name, email, message);
+
+        }
+            function sendEmail(name, email, message) {
+            Email.send({
+            SecureToken : "a5bd7fa1-b7e3-42d2-a66a-7648e9d09528",
+            To : 'ternstonedev@gmail.com',
+            From : "meghanspinn230@gmail.com",
+            Subject: `${name} sent you a message`,
+            Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}` ,
+            })
+            .then(function (message) {
+            alert("Mail has been sent successfully")
+            });
+            }
+            </script>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
