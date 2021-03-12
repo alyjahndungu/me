@@ -15,5 +15,6 @@ btn.addEventListener("click", () => {
             })
             .then(msg => 
             alert("Mail has been sent successfully")
+            
             );
 });
