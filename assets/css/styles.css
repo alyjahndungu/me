@@ -7,6 +7,7 @@
   --font-semi: 600;
 }
 
+
 /*===== Colores =====*/
 :root{
   --first-color: #e65100;
@@ -164,9 +165,9 @@ img{
   background-color: var(--first-color);
 }
 .nav__logo{
-  color: var(--second-color);
+  color: var(--first-color);
   font-family: 'Nunito', sans-serif;
-
+  font-weight: 800;
 }
 .nav__toggle{
   color: var(--second-color);
